@@ -1,0 +1,63 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 450px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(#e5e4e4, #fff);
+    display: flex;
+    margin: 10px;
+    overflow: hidden;
+}
+.left-infor{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #935f82;
+    /* border-radius: 5px 0 0 5px; */
+}
+.left-infor p{
+    background: rgba(0,0,0,0.25);
+    padding:8px;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+img{
+    width: 100px;
+    margin:10px;
+}
+.right-infor{
+    position: relative;
+}
+
+.right-infor h1{
+    padding-left: 10px;
+}
+
+.right-infor p{
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 0 10px;
+}
+
+.right-infor .linkedin-link{
+    position:absolute;
+    bottom: 12px;
+    right:12px;
+}
+.right-infor .linkedin-link a{
+    text-decoration: none;
+    color: darkblue;
+}
+.right-infor .linkedin-link a:hover{
+    text-decoration: underline;
+    color: blue;
+}
