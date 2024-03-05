@@ -5,7 +5,7 @@
 ### add “"start": "node app.js",” in script in .json file
 ### type “npm start” to start app
 ## 3.Use nodemon to start
-### npm install nodemon --save (install in your project or in global)
+### npm install nodemon (install in your project or in global)
 ### update .json file to start with nodemon (nodemon app.js)
 ## 4.Push Node project to GitHub
 ### add node_modules to .gitignore file, then push
