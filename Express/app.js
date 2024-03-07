@@ -80,14 +80,19 @@ const app = express()
 
 
 ////////////// No. 5 route module//////////////////
-// const allRoutes = require('./routes/route')
-// app.use(express.urlencoded({extended: true}))
+const allRoutes = require('./routes/route')
 
-// app.use(allRoutes)
+// convert form data to javascript object and put into request body
+app.use(express.urlencoded({extended: false}))
 
-// app.use((req, res, next) => {
-//     res.send('<h1>Page not found</h1>');
-// });
+// convert json to javascript object and put into request body
+app.use(express.json())
+
+app.use(allRoutes)
+
+app.use((req, res, next) => {
+    res.send('<h1>Page not found</h1>');
+});
 
 
 app.listen(7000, ()=>{
