@@ -59,17 +59,37 @@ const app = express()
 //     res.redirect('/cards')
 // })
 
+////////////// No. 4 route module//////////////////
+// const router = express.Router()
+// app.use(express.urlencoded({extended: true}))
 
-// //////////// No. 4 route module//////////////////
-const allRoutes = require('./routes/route')
-app.use(express.urlencoded({extended: true}))
+// router.get('/create', (req, res, next) => {
+//     res.send('<form action="/cards" method="POST"><label>card name:</label><input type="text" name="title"><button type="submit">submit</button></form>');
+// });
 
-app.use(allRoutes)
+// router.post('/cards', (req, res, next) => {
+//     console.log(req.body.title)
+//     res.redirect('/cards');
+// });
 
-app.use((req, res, next) => {
-    res.send('<h1>Page not found</h1>');
-});
+// router.get('/cards', (req, res, next) => {
+//     res.send('<h1>This is cards page</h1>');
+// });
+
+// app.use(router)
+
+
+////////////// No. 5 route module//////////////////
+// const allRoutes = require('./routes/route')
+// app.use(express.urlencoded({extended: true}))
+
+// app.use(allRoutes)
+
+// app.use((req, res, next) => {
+//     res.send('<h1>Page not found</h1>');
+// });
+
 
 app.listen(7000, ()=>{
-    console.log('server is runing........')
+    console.log('server is running........')
 })
