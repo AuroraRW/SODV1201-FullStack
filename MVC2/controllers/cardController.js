@@ -15,10 +15,12 @@ const createOneCard = (req, res) => {
         description: req.body.description,
         level: req.body.level,
         point: req.body.point,
-        imageurl: req.body.imageurl
+        imageURL: req.body.imageURL
     }
     cardData.push(newCard)
-    res.json(cardData)
+    let url = req.headers.origin + '/card.html'
+    // console.log(req.headers.origin)
+    res.redirect(url);
 }
 
 const editOneCard = (req, res)=>{
