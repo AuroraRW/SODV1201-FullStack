@@ -10,3 +10,4 @@
 ### 8. MVC: backend for card project following MVC
 ### 9. MVC2：backend of card project which could connect to the frontend
 ### 10. Frontend: frontend of card project (connect to backend of MVC2) 
+### 11. MongoDB: update backend to connect MongoDB Atlas

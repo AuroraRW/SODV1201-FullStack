@@ -19,7 +19,7 @@ const createOneCard = (req, res) => {
     }
     cardData.push(newCard)
     let url = req.headers.origin + '/card.html'
-    // console.log(req.headers.origin)
+    console.log(req.headers.origin)
     res.redirect(url);
 }
 
