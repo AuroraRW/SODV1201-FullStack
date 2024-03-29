@@ -25,6 +25,9 @@ if(token){
       addLogout()
     }  
   })
+  .catch(err=>{
+    window.location.href="login.html"
+  })
 }else{
   window.location.href="login.html"
 }
